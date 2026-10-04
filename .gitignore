@@ -1,0 +1,8 @@
+# Zindi data is not ours to redistribute - download it into data/raw/
+data/raw/
+# large / regenerable files
+embeddings/
+results/**/model.keras
+results/**/logs/
+__pycache__/
+.ipynb_checkpoints/
