@@ -1,0 +1,18 @@
+run,rnn,emb,weights,masked,seed,params,best_epoch,train_min,val_macro_f1,test_accuracy,test_macro_f1,test_weighted_f1,test_macro_roc_auc,test_macro_pr_auc,test_f1_Sexual,test_f1_Physical,test_f1_Emotional,test_f1_Economic,test_f1_Harmful trad.
+bigru_glove_w-sqrt_u128_s1,gru,glove,sqrt,False,1,1873197,6,29.865,0.9946,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0
+bigru_glove_w-sqrt_u128_s2,gru,glove,sqrt,False,2,1873197,3,177.5633,0.993,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0
+bigru_glove_w-sqrt_u128_s42,gru,glove,sqrt,False,42,1873197,4,13.8483,0.9946,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0
+bilstm_glove-frozen_w-sqrt_u128_s42,lstm,glove-frozen,sqrt,False,42,1931053,4,11.775,0.9915,0.9997,0.9998,0.9997,1.0,1.0,0.9998,0.9991,1.0,1.0,1.0
+bilstm_glove_w-balanced_u128_s42,lstm,glove,balanced,False,42,1931053,8,26.3383,0.993,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0
+bilstm_glove_w-none_u128_s42,lstm,glove,none,False,42,1931053,6,16.5083,0.993,0.9997,0.9983,0.9997,1.0,1.0,1.0,0.9991,0.9922,1.0,1.0
+bilstm_glove_w-sqrt_u128_s1,lstm,glove,sqrt,False,1,1931053,6,557.1967,0.9946,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0
+bilstm_glove_w-sqrt_u128_s2,lstm,glove,sqrt,False,2,1931053,7,249.7467,0.993,0.9997,0.9938,0.9997,1.0,1.0,1.0,1.0,0.9922,0.9767,1.0
+bilstm_glove_w-sqrt_u128_s42,lstm,glove,sqrt,False,42,1931053,6,16.6367,0.993,0.9997,0.9983,0.9997,1.0,1.0,1.0,0.9991,0.9922,1.0,1.0
+bilstm_random_w-sqrt_u128_s42,lstm,random,sqrt,False,42,1931053,4,9.225,0.9946,0.999,0.9902,0.999,1.0,1.0,0.9994,1.0,0.9774,1.0,0.9744
+masked_bigru_glove_w-sqrt_u128_s1,gru,glove,sqrt,True,1,1869097,6,48.6233,0.9444,0.9826,0.9351,0.9825,0.9976,0.9643,0.9902,0.9572,0.832,0.9231,0.973
+masked_bigru_glove_w-sqrt_u128_s2,gru,glove,sqrt,True,2,1869097,7,36.855,0.9514,0.9839,0.9463,0.9837,0.9972,0.9668,0.9911,0.9586,0.8293,0.9524,1.0
+masked_bigru_glove_w-sqrt_u128_s42,gru,glove,sqrt,True,42,1869097,11,49.2183,0.9358,0.9821,0.9386,0.9821,0.9969,0.9682,0.99,0.9551,0.8226,0.9524,0.973
+masked_bilstm_glove_w-sqrt_u128_s1,lstm,glove,sqrt,True,1,1926953,12,57.325,0.9561,0.9833,0.934,0.9832,0.9964,0.9658,0.9906,0.9615,0.813,0.9048,1.0
+masked_bilstm_glove_w-sqrt_u128_s2,lstm,glove,sqrt,True,2,1926953,9,43.2283,0.942,0.9846,0.9401,0.9845,0.9963,0.9651,0.9914,0.963,0.8413,0.9048,1.0
+masked_bilstm_glove_w-sqrt_u128_s42,lstm,glove,sqrt,True,42,1926953,11,196.3967,0.9385,0.9844,0.9431,0.9843,0.9964,0.9677,0.9913,0.9622,0.832,0.9302,1.0
+masked_bilstm_random_w-sqrt_u128_s42,lstm,random,sqrt,True,42,1926953,12,24.505,0.8993,0.9741,0.8927,0.9739,0.9919,0.928,0.9854,0.9417,0.7,0.8889,0.9474

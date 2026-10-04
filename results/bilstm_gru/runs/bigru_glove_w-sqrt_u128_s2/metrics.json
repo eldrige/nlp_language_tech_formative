@@ -1,0 +1,154 @@
+{
+  "val": {
+    "accuracy": 0.9994877049180327,
+    "macro_f1": 0.9930064519759176,
+    "weighted_f1": 0.9994852211271466,
+    "macro_roc_auc": 0.9999039913403948,
+    "macro_pr_auc": 0.9932464910929651,
+    "per_class": {
+      "sexual_violence": {
+        "precision": 0.9996928746928747,
+        "recall": 0.9996928746928747,
+        "f1-score": 0.9996928746928747,
+        "support": 3256.0
+      },
+      "Physical_violence": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 543.0
+      },
+      "emotional_violence": {
+        "precision": 0.9848484848484849,
+        "recall": 1.0,
+        "f1-score": 0.9923664122137404,
+        "support": 65.0
+      },
+      "economic_violence": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 21.0
+      },
+      "Harmful_Traditional_practice": {
+        "precision": 1.0,
+        "recall": 0.9473684210526315,
+        "f1-score": 0.972972972972973,
+        "support": 19.0
+      }
+    },
+    "confusion_matrix": [
+      [
+        3255,
+        0,
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        543,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        65,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        21,
+        0
+      ],
+      [
+        1,
+        0,
+        0,
+        0,
+        18
+      ]
+    ]
+  },
+  "test": {
+    "accuracy": 1.0,
+    "macro_f1": 1.0,
+    "weighted_f1": 1.0,
+    "macro_roc_auc": 1.0,
+    "macro_pr_auc": 1.0,
+    "per_class": {
+      "sexual_violence": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 3255.0
+      },
+      "Physical_violence": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 543.0
+      },
+      "emotional_violence": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 65.0
+      },
+      "economic_violence": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 21.0
+      },
+      "Harmful_Traditional_practice": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 19.0
+      }
+    },
+    "confusion_matrix": [
+      [
+        3255,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        543,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        65,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        21,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        19
+      ]
+    ]
+  }
+}
