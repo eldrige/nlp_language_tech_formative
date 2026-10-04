@@ -1,0 +1,4 @@
+model,masked,test_accuracy,test_macro_f1
+Keyword rule,False,0.8957,0.6306
+TF-IDF + LR,False,0.9969,0.9785
+TF-IDF + LR,True,0.9769,0.9114
