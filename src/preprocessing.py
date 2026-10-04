@@ -160,6 +160,14 @@ def make_splits(train_df: pd.DataFrame, val_size: float = 0.1, test_size: float 
     return out[["Tweet_ID", "split"]].reset_index(drop=True)
 
 
+def data_file(name: str) -> Path:
+    """Locate a Zindi CSV in data/raw/ or, failing that, the repo root."""
+    for path in (RAW_DIR / name, ROOT / name):
+        if path.exists():
+            return path
+    raise FileNotFoundError(f"{name} not found in {RAW_DIR} or {ROOT}")
+
+
 def load_data(tags: bool = True, masked: bool = False
               ) -> tuple[pd.DataFrame, pd.DataFrame, pd.DataFrame, pd.DataFrame]:
     """Return (train, val, test, zindi_test) DataFrames with a `clean` column.
@@ -167,8 +175,8 @@ def load_data(tags: bool = True, masked: bool = False
     Labelled frames also carry an integer `label` column (see LABELS order).
     masked=True applies `mask_keywords` (requires tags=True, i.e. lowercased text).
     """
-    raw = pd.read_csv(RAW_DIR / "Train.csv")
-    zindi = pd.read_csv(RAW_DIR / "Test.csv")
+    raw = pd.read_csv(data_file("Train.csv"))
+    zindi = pd.read_csv(data_file("Test.csv"))
     if not SPLITS_PATH.exists():
         SPLITS_PATH.parent.mkdir(parents=True, exist_ok=True)
         make_splits(raw).to_csv(SPLITS_PATH, index=False)
